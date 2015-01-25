@@ -13,6 +13,8 @@
         android:label="@string/application_vimtouch"
         android:allowBackup="true"
         >
+        <meta-data android:name="com.samsung.android.sdk.multiwindow.enable"
+                   android:value="true" />
         <activity android:name="net.momodalo.app.vimtouch.VimTouch"
                 android:theme="@style/VimTheme"
                 android:launchMode="singleInstance"
@@ -21,6 +23,7 @@
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
+                <category android:name="android.intent.category.MULTIWINDOW_LAUNCHER" />
             </intent-filter>
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
